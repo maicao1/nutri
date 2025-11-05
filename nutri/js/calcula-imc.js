@@ -2,7 +2,7 @@
 var	tSecundario = document.querySelector(".titulo__secundario");
 var titulo = document.querySelector(".titulo");
 tSecundario.innerText = 'Meus Pacientes';
-titulo.innerText = 'Lucas Nutrições';
+titulo.innerText = 'Maicao Nutrições';
 
 // Cria a variável paciente e peso pela classe.
 var pacientes = document.querySelectorAll(".paciente");

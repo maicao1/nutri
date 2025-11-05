@@ -10,12 +10,14 @@
 	<body>
 		<header>
 			<div class="container">
-				<h1 class="titulo">Aparecida Nutrição</h1>
+				<h1 class="titulo">Maicon Nutrição</h1>
 			</div>
 		</header>
 		<main>
 			<section class="container">
 				<h2 class="titulo__secundario">Meus Clientes</h2>
+				<label for="filtrar-tabela">filtro:</label>
+				<input type="text" name="filtro" placeholder="digite o nome do paciente" id="filtrar-tabela">
 				<table>
 					<thead>
 						<tr>
@@ -74,8 +76,6 @@
 		<section class="container">
 			<h2 id="titulo-form">Adicionar novo paciente</h2>
 			<ul id="mensagens-erro">
-				<li></li>
-
 				
 			</ul>
 			<form id="form-adiciona">
@@ -85,24 +85,25 @@
 				</div>
 				<div class="grupo">
 					<label for="peso">Peso:</label>
-					<input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+					<input id="peso" name="peso" type="number" placeholder="digite o peso do seu paciente" class="campo campo-medio">
 				</div>
 				<div class="grupo">
 					<label for="altura">Altura:</label>
-					<input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+					<input id="altura" name="altura" type="number" placeholder="digite a altura do seu paciente" class="campo campo-medio">
 				</div>
 				<div class="grupo">
 					<label for="gordura">% de Gordura:</label>
-					<input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+					<input id="gordura" type="number" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
 				</div>
 		
 				<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
 			</form>
 		</section>
-
 		
 		<script src="js/formulario.js"></script>
 		<script src="js/calcula-imc.js"></script>
 		<script src="js/remove-paciente.js"></script>
+		<script src="js/filtrar.js"></script>
+
 	</body>
 </html>
